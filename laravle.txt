@@ -1,0 +1,7 @@
+■pdoが必要(mysqlへの接続モジュール)
+sudo yum -y install php72-pdo_mysql
+
+■キャッシュクリア
+composer dump-autoload
+php artisan clear-compiled
+php artisan config:cache
